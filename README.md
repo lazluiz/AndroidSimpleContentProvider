@@ -15,4 +15,4 @@ In this example I created a simple Table of Alarms so we can do basic CRUD.
 That's where the magic happens.
 This class extends the ContentProvider class, and then we override it's methods so we can make our Content Provider work.
 
-> PS: Don't forget about the <provider> tag in our AndroidManifest, which makes the DBProvider our APP's default Content Provider.
+> PS: Don't forget about the **provider** tag in our AndroidManifest, which makes the DBProvider our APP's default Content Provider.
