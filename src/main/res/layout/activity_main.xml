@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.zelius.simplecontentprovider.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This APP is a simple example of how to use Content Providers.
+        \n\nThere is a table called Alarms with a few columns which you can populate and retrieve values from here or another app knowing its URI"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert a random Alarm through ContentProvider"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        android:id="@+id/buttonInsert"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ButtonClick_Insert"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read all Alarms through ContentProvider"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read ALL"
+        android:id="@+id/buttonReadAll"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ButtonClick_Read"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete all Alarms Through ContentProvider"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete ALL"
+        android:id="@+id/buttonDeleteAll"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ButtonClick_Delete"/>
+
+</LinearLayout>
