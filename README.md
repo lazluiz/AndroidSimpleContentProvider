@@ -11,13 +11,11 @@ Just for setting up the SQLite database.
 
 **[DBContract.java](https://github.com/luizfelippe/AndroidSimpleContentProvider/blob/master/src/main/java/br/com/zelius/simplecontentprovider/data/DBContract.java)**
 Here we define the SQL Tables and Columns and then the URIs which our Content Provider will comunicate to.
-
 In this example I created a simple Table of Alarms so we can do basic CRUD.
 
 
 **[DBProvider.java](https://github.com/luizfelippe/AndroidSimpleContentProvider/blob/master/src/main/java/br/com/zelius/simplecontentprovider/data/DBProvider.java)**
 That's where the `magic` happens.
-
 This class extends the ContentProvider class, and then we override it's methods so we can make our Content Provider work.
 
 
